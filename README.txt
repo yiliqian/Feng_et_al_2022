@@ -1,7 +1,3 @@
-Supplementary Data 11
-
-Title: 
-
 MATLAB scripts for inference of parameters in mathematical models of single strain growth, interspecies interactions, and butyrate production, related to Figure 1, 5 and S8.
 
 Description: 
