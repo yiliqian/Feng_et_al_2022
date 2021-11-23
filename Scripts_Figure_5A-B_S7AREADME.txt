@@ -1,6 +1,6 @@
 README:
 
-This folder contains scripts and all raw data used to generate Figures 5A-B and Figure S8A in the manuscript: 
+This folder contains scripts and all raw data used to generate Figures 5A-B and Figure S7A in the manuscript: 
 
 Feng et al "Polysaccharide utilization loci in Bacteroides determine population fitness and community-level interactions", submitted for publication in Cell Host & Microbe.
 
