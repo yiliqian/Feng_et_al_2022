@@ -1,4 +1,4 @@
-This repository contains scripts used for RNA-seq data analysis (Figures 2 and S4) and parameter inference in mathematical models (Figures 1, 5, and S7) in the manusctip:
+This repository contains scripts used for RNA-seq data analysis (Figures 2 and S4) and parameter inference in mathematical models (Figures 1, 5, and S7) in the manuscript:
 
 Feng et al "Polysaccharide utilization loci in Bacteroides determine population fitness and community-level interactions", submitted for publication in Cell Host & Microbe.
 
