@@ -1,0 +1,9 @@
+fastqc -o 00compressed/Mucin-1_R1_001.fastq.gz
+
+bbduk.sh -Xmx1g in1=./00compressed/Mucin-1_R1_001.fastq.gz in2=./00compressed/Mucin-1_R2_001.fastq.gz out1=./02trimmed/Mucin-1_R1_001.fastq.gz out2=./02trimmed/Mucin-1_R2_001.fastq.gz ref=./adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo qtrim=rl trimq=10
+
+bbsplit.sh in1=./02trimmed/Mucin-1_R1_001.fastq.gz in2=./02trimmed/Mucin-1_R2_001.fastq.gz ref=./refGenomes/BU_rRNA.fasta out_/refGenomes/BU_rRNA.fasta=./03rRNA/Mucin-1_.sam outu1=./03mRNA/Mucin-1_R1_001.fastq.gz outu2=./03mRNA/Mucin-1_R2_001.fastq.gz
+
+bbmap.sh in1=./03mRNA/Mucin-1_R1_001.fastq.gz in2=./03mRNA/Mucin-1_R2_001.fastq.gz ref=./refGenomes/BU.fasta out=./04mapped/Mucin-1_.sam nodisk ambig=random nodisk sam=1.3
+
+featureCounts -p -t gene -g gene_id -M --fraction -C -T 32 -a ./refGenomes/BU.gtf -o ./05counts/Mucin-1.count ./04mapped/Mucin-1_.sam
