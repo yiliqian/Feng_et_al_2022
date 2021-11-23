@@ -8,7 +8,7 @@ A brief description of each items in this folder can be found below:
 
 - "MCMC_ini.m": MATLAB script to set up MCMC parameters (number of iterations, prior functions, adaptive gain parameters etc.) and initiate an MCMC run. To run parameter inference, use this script. 
 
-- "data" folder: A folder containing monoculture experimental data for parameter inference. 
+- "data" zip folder: A folder containing monoculture experimental data for parameter inference. Unzip the folder in order to proceed.
 
 - "SeedPara.mat": A MATLAB data file that stores the initial conditions for MCMC runs used for the paper. Different initial conditions could be used. 
 
